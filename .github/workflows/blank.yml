@@ -33,9 +33,6 @@ jobs:
 
       - name: Commit and push if changed
         run: |-
-          git diff
-          git config --global user.email "dahischeng@gmail.com"
-          git config --global user.name "DahisC"
           git add -A
           git commit -m "Updated articles" || exit 0
           git push
