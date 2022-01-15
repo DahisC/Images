@@ -1,5 +1,5 @@
 const fs = require('fs');
-const axios = require('axios');
+// const axios = require('axios');
 
 const sheetId = '12Da53Wv7IpJCkC5xjgQAnJGZ9451T6Tf76mkhurSBsc';
 
@@ -14,13 +14,13 @@ const gid = {
 };
 
 async function download() {
-  const res = await axios.get(
-    'https://docs.google.com/spreadsheets/d/12Da53Wv7IpJCkC5xjgQAnJGZ9451T6Tf76mkhurSBsc/gviz/tq?tqx=out:csv&gid=872461849'
-  );
-  console.log(res);
-  res.data.replace('"",', '');
-  res.data.replace('"', '');
-  fs.writeFileSync('test.csv', res.data);
+//   const res = await axios.get(
+//     'https://docs.google.com/spreadsheets/d/12Da53Wv7IpJCkC5xjgQAnJGZ9451T6Tf76mkhurSBsc/gviz/tq?tqx=out:csv&gid=872461849'
+//   );
+//   console.log(res);
+//   res.data.replace('"",', '');
+//   res.data.replace('"', '');
+  fs.writeFileSync('test.csv', 'fuckkkkkkk');
 }
 
 download();
